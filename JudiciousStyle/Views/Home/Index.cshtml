@@ -1,0 +1,186 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+    <div class="row">
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+
+            .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+
+                .card button:hover {
+                    opacity: 0.7;
+                }
+
+            .card2 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+
+
+                .card2 button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                }
+
+                    .card2 button:hover {
+                        opacity: 0.7;
+                    }
+
+            .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+
+
+                .card1 button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                }
+
+                    .card1 button:hover {
+                        opacity: 0.7;
+                    }
+
+            img {
+                max-width: 100%;
+                max-height: 200px;
+            }
+        </style>
+
+
+        <h2 style="text-align:center">T-Shirt</h2>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/clothes/tshirt1.jpeg" alt="Denim Jeans">
+                <h1>Pearl White Shirt</h1>
+                <p class="price">Rs549.99</p>
+                    <p><button type="button"><a href="/Home/About?price=549.99&&desc=Pearl White Shirt">Buy Now</a></a></button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card1">
+                <img src="~/clothes/tshirt2.jpeg" alt="Denim Jeans">
+                <h1>Grey Shirt</h1>
+                <p class="price">Rs600</p>
+                
+                <p><button><a href="/Home/About?price=600&&desc=Grey Shirt">Buy Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card2">
+                <img src="~/clothes/tshirt3.jpeg" alt="Denim Jeans">
+                <h1>Polo Shirt</h1>
+                <p class="price">Rs700</p>
+                
+                <p><button ><a href="/Home/About?price=700&&desc=Polo Shirt">Buy Now</a></button></p>
+            </div>
+        </div>
+
+        <h2 style="text-align:center">Jeans</h2>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/clothes/jeans1.jpeg" alt="Denim Jeans">
+                <h1>Diesel Jeans</h1>
+                <p class="price">Rs1000</p>
+                
+                <p><button ><a href="/Home/About?price=1000&&desc=Diesel Jeans">Buy Now</a></button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card1">
+                <img src="~/clothes/jeans2.jpeg" alt="Denim Jeans">
+                <h1>Calvin Klein Jeans</h1>
+                <p class="price">Rs1500</p>
+                
+                <p><button ><a href="/Home/About?price=1500&&desc=Calvin Klein Jeans">Buy Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card2">
+                <img src="~/clothes/jeans3.jpeg" alt="Denim Jeans">
+                <h1>Levi's Jeans</h1>
+                <p class="price">Rs900</p>
+                
+                <p><button ><a href="/Home/About?price=900&&desc=Levi's Jeans">Buy Now</a></button></p>
+            </div>
+        </div>
+        <div class="col-md-12" >
+
+        <h2 style="text-align:center;">Shoes</h2>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/clothes/shoes1.jpg" alt="Denim Jeans">
+                <h1>Puma</h1>
+                <p class="price">Rs2000</p>
+                
+                <p><button ><a href="/Home/About?price=2000&&desc=Puma">Buy Now</a></button></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card1">
+                <img src="~/clothes/shoes2.jpeg" alt="Denim Jeans">
+                <h1>Addidas</h1>
+                <p class="price">Rs2500</p>
+                
+                <p><button ><a href="/Home/About?price=2500&&desc=Addidas">Buy Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card2">
+                <img src="~/clothes/shoes3.jpeg" alt="Denim Jeans">
+                <h1>Nike</h1>
+                <p class="price">Rs1500</p>
+                
+                <p><button><a href="/Home/About?price=1500&&desc=Nike">Buy Now</a></button></p>
+            </div>
+        </div>
+    </div>
+    
+    

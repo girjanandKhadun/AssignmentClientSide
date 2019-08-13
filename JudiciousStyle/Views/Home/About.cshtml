@@ -1,0 +1,52 @@
+﻿
+@model  JudiciousStyle.Controllers.HomeController.User_Client_Card_Info
+<h1>Product</h1>
+<h4>Description: @Html.ValueFor(s => s.PurchaseDescription)</h4>
+<h4>Price: @Html.ValueFor(s => s.TransactionAmount)</h4>
+@using (Html.BeginForm())
+{
+    <p>Cedit card Number</p>
+    @Html.TextBoxFor(s => s.CardNumber)
+    <br />
+    <p>Identity Number</p>
+    @Html.TextBoxFor(s => s.IdentityNumber)
+    <br />
+    <p>Card type</p>
+    @Html.TextBoxFor(s => s.CardType)
+
+    <p>Expiration Date</p>
+    @Html.TextBoxFor(s => s.ExpirationDate);
+
+    @Html.HiddenFor(s => s.PurchaseDescription);
+
+    @Html.HiddenFor(s => s.TransactionAmount);
+    <input type="submit" class="btn btn-success" value="Purchase" />
+}
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function buyNow(CardNumber, IdentityNumber, CardType, ExpirationDate, TransactionAmount, PurchaseDescription) {
+        $.ajax({
+            async: true,
+            type: "Post",
+            contentType: "application/json; charset-utf-8",
+            data: {
+                "User_Client_Card_Info": {
+                    "CardNumber": CardNumber,
+                    "IdentityNumber": IdentityNumber,
+                    "CardType": CardType,
+                    "ExpirationDate": ExpirationDate,
+                    "TransactionAmount": TransactionAmount,
+                    "PurchaseDescription": PurchaseDescription
+                }
+            },
+            url: "Home/PostResult",
+            success: function (data) {
+                alert(data.Result);
+            },
+            error: function (result) {
+                alert("failed " + result.responseJSON);
+            }
+
+        });
+    }
+</script>
